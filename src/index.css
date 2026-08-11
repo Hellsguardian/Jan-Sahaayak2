@@ -47,14 +47,24 @@ body {
   transform: rotate(1.2deg);
 }
 
-.card-tilt-left:hover, .card-tilt-right:hover {
+.card-tilt-left:hover,
+.card-tilt-right:hover {
   transform: rotate(0deg) translateY(-4px);
 }
 
 /* Pulse animation for civic status dots */
 @keyframes softPulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.25); opacity: 0.75; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 0.75;
+  }
 }
 
 .animate-pulse-soft {
@@ -63,23 +73,53 @@ body {
 
 /* Floating animation for hero elements */
 @keyframes floatGentle {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-6px) rotate(0.8deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-6px) rotate(0.8deg);
+  }
 }
 
 @keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-7px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
 }
 
 @keyframes glowPulse {
-  0%, 100% { opacity: 0.65; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.03); }
+
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.03);
+  }
 }
 
 @keyframes birdGentle {
-  0%, 100% { transform: translateY(0px) translateX(0px); }
-  50% { transform: translateY(-4px) translateX(3px); }
+
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  50% {
+    transform: translateY(-4px) translateX(3px);
+  }
 }
 
 .animate-float {
@@ -103,13 +143,18 @@ body {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #F1EDFF;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #C4B5FD;
   border-radius: 9999px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #6546D9;
 }
+
+/* hello */
